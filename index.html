@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOL - School of Open Learning</title>
+    <style>
+        :root {
+            --primary: #2A2A72;
+            --secondary: #009FFD;
+            --accent: #FFA400;
+            --light: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--light) 50%, #ffffff 50%);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.1);
+            transform: rotate(45deg);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .accordion {
+            background: white;
+            margin: 1rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .accordion-header {
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .link-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .link-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header {
+                padding: 1rem;
+            }
+        }
+
+        .animated {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <h1>SOL</h1>
+        <div class="nav-links">
+            <a href="#courses">Courses</a>
+            <a href="#admission">Admission</a>
+            <a href="#materials">Study Materials</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="animated">
+        <h1>School of Open Learning</h1>
+        <p>Empowering Distance Education</p>
+    </header>
+
+    <section id="courses" class="course-grid animated">
+        <div class="course-card">
+            <h3>Undergraduate Programs</h3>
+            <ul>
+                <li><a href="#ba">BA</a></li>
+                <li><a href="#bcom">BCom</a></li>
+            </ul>
+        </div>
+        <div class="course-card">
+            <h3>Postgraduate Programs</h3>
+            <ul>
+                <li>MA Specializations:
+                    <ul>
+                        <li>English</li>
+                        <li>Economics</li>
+                        <li>History</li>
+                        <!-- Add other specializations -->
+                    </ul>
+                </li>
+                <li>MCom</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="admission" class="animated">
+        <div class="accordion">
+            <div class="accordion-header">
+                <h3>Admission Procedure</h3>
+                <span>▼</span>
+            </div>
+            <div class="accordion-content">
+                <a href="https://sppu.digitaluniversity.ac/admissions" class="link-card">Apply Now</a>
+                <a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" class="link-card">Admission Schedule</a>
+                <!-- Add other admission links -->
+            </div>
+        </div>
+    </section>
+
+    <section id="materials" class="quick-links animated">
+        <a href="http://cec.nic.in/" class="link-card">e-Content Portal</a>
+        <a href="https://ndl.iitkgp.ac.in/" class="link-card">Digital Library</a>
+        <!-- Add other study material links -->
+    </section>
+
+    <footer id="contact" class="animated">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: student.sol@unipune.ac.in</p>
+            <address>
+                School of Open Learning (SoL),<br>
+                IDS Building, Near SET Guest House,<br>
+                IUCAA Road, SPPU, Pune-411007
+            </address>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                header.querySelector('span').textContent = 
+                    content.style.display === 'block' ? '▲' : '▼';
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
