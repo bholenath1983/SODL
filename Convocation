@@ -1,0 +1,15 @@
+<!-- Add this section with the Convocation link -->
+<section id="student-services" class="quick-links animated">
+    <div class="service-card">
+        <h3>Student Services</h3>
+        <div class="service-links">
+            <a href="http://www.unipune.ac.in/university_files/certificatesection.htm" 
+               class="link-card" 
+               target="_blank">
+                <img src="graduation-cap.svg" alt="Convocation Icon">
+                Convocation Certificates
+             </a>
+        </div>
+    </div>
+</section>
+
