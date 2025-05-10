@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School of Open Learning - Savitribai Phule Pune University">
     <title>SOL - School of Open Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        :root {
-            --primary: #2A2A72;
-            --secondary: #009FFD;
-            --accent: #FFA400;
-            --light: #f8f9fa;
-        }
-
         * {
             box-sizing: border-box;
             margin: 0;
@@ -19,227 +14,230 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, var(--light) 50%, #ffffff 50%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
         }
 
         .header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: #003366;
             color: white;
-            padding: 2rem;
+            padding: 1.5rem;
             text-align: center;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-            position: relative;
-            overflow: hidden;
         }
 
-        .header::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            left: -50px;
-            width: 100px;
-            height: 100px;
-            background: rgba(255,255,255,0.1);
-            transform: rotate(45deg);
+        .nav {
+            background: #004080;
+            padding: 1rem;
         }
 
-        .nav-container {
+        .nav-menu {
             display: flex;
-            justify-content: space-between;
-            padding: 1rem 2rem;
-            background: white;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
         }
 
-        .course-grid {
+        .nav-menu li {
+            margin: 0 1.5rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            padding: 2rem;
         }
 
-        .course-card {
+        .card {
             background: white;
-            border-radius: 15px;
-            padding: 1.5rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-        }
-
-        .course-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        .accordion {
-            background: white;
-            margin: 1rem 0;
             border-radius: 10px;
-            overflow: hidden;
+            padding: 1.5rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
 
-        .accordion-header {
-            padding: 1rem;
-            background: var(--primary);
-            color: white;
-            cursor: pointer;
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #003366;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 0.5rem;
+        }
+
+        .link-list {
+            list-style: none;
+        }
+
+        .link-list li {
+            margin: 0.8rem 0;
+        }
+
+        .link-list a {
+            color: #004080;
+            text-decoration: none;
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
 
-        .quick-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            padding: 2rem;
+        .link-list a:hover {
+            color: #00264d;
+            text-decoration: underline;
         }
 
-        .link-card {
+        .link-list i {
+            margin-right: 0.5rem;
+            color: #003366;
+        }
+
+        .contact-section {
             background: white;
-            padding: 1.5rem;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
             border-radius: 10px;
-            text-align: center;
-            transition: all 0.3s;
-            border: 2px solid transparent;
         }
 
-        .link-card:hover {
-            border-color: var(--accent);
-            transform: scale(1.02);
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
         }
 
         @media (max-width: 768px) {
-            .nav-container {
+            .nav-menu {
                 flex-direction: column;
                 text-align: center;
             }
             
-            .header {
-                padding: 1rem;
+            .nav-menu li {
+                margin: 0.5rem 0;
             }
-        }
-
-        .animated {
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            
+            .main-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="nav-container">
-        <h1>SOL</h1>
-        <div class="nav-links">
-            <a href="#courses">Courses</a>
-            <a href="#admission">Admission</a>
-            <a href="#materials">Study Materials</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-
-    <header class="animated">
+    <header class="header">
         <h1>School of Open Learning</h1>
-        <p>Empowering Distance Education</p>
+        <p>Savitribai Phule Pune University</p>
     </header>
 
-    <section id="courses" class="course-grid animated">
-        <div class="course-card">
-            <h3>Undergraduate Programs</h3>
-            <ul>
-                <li><a href="#ba">BA</a></li>
-                <li><a href="#bcom">BCom</a></li>
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#study-material">Study Material</a></li>
+            <li><a href="#exams">Exams</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        <!-- Admissions Section -->
+        <div class="card" id="admissions">
+            <h2><i class="fas fa-user-graduate"></i> Admissions</h2>
+            <ul class="link-list">
+                <li><a href="https://sppu.digitaluniversity.ac/admissions" target="_blank"><i class="fas fa-link"></i>Admission Procedure</a></li>
+                <li><a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" target="_blank"><i class="fas fa-calendar-alt"></i>Admission Schedule</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RAHj5oNbqIg" target="_blank"><i class="fab fa-youtube"></i>Admission Help Tutorial</a></li>
+                <li><a href="https://sppuoa.digitaluniversity.ac/esuvidha/instructionFinal/SavitribaiPhulePune.pdf" target="_blank"><i class="fas fa-file-pdf"></i>Admission Help Presentation</a></li>
+                <li><a href="https://sppuoa.digitaluniversity.ac/ScheduleCollegeList?ppid=39" target="_blank"><i class="fas fa-university"></i>Coursewise Admission Centers</a></li>
             </ul>
         </div>
-        <div class="course-card">
-            <h3>Postgraduate Programs</h3>
-            <ul>
-                <li>MA Specializations:
-                    <ul>
-                        <li>English</li>
-                        <li>Economics</li>
-                        <li>History</li>
-                        <!-- Add other specializations -->
+
+        <!-- Student Profile Section -->
+        <div class="card">
+            <h2><i class="fas fa-user-circle"></i> Student Profile</h2>
+            <ul class="link-list">
+                <li><a href="https://sppuapp.digitaluniversity.ac/Login.aspx?IsCollege=%27N%27" target="_blank"><i class="fas fa-sign-in-alt"></i>Student Login</a></li>
+            </ul>
+        </div>
+
+        <!-- Study Material Section -->
+        <div class="card" id="study-material">
+            <h2><i class="fas fa-book-open"></i> Study Material</h2>
+            <ul class="link-list">
+                <li><a href="http://unipune.ac.in/SOL/Syllabus.html" target="_blank"><i class="fas fa-file-alt"></i>Syllabus</a></li>
+                <li><a href="#online-resources" class="submenu-toggle"><i class="fas fa-link"></i>Online Resources</a>
+                    <ul class="submenu">
+                        <li><a href="https://storage.googleapis.com/uniquecourses/online.html" target="_blank">SWAYAM</a></li>
+                        <!-- Add all other study material links here -->
                     </ul>
                 </li>
-                <li>MCom</li>
             </ul>
         </div>
-    </section>
 
-    <section id="admission" class="animated">
-        <div class="accordion">
-            <div class="accordion-header">
-                <h3>Admission Procedure</h3>
-                <span>▼</span>
-            </div>
-            <div class="accordion-content">
-                <a href="https://sppu.digitaluniversity.ac/admissions" class="link-card">Apply Now</a>
-                <a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" class="link-card">Admission Schedule</a>
-                <!-- Add other admission links -->
-            </div>
+        <!-- Exam Section -->
+        <div class="card" id="exams">
+            <h2><i class="fas fa-file-alt"></i> Exams</h2>
+            <ul class="link-list">
+                <li><a href="http://collegecirculars.unipune.ac.in/sites/examdocs/SODL%20Question%20Papers%20Formats/Forms/AllItems.aspx" target="_blank"><i class="fas fa-file-pdf"></i>Question Paper Formats</a></li>
+                <li class="dropdown">
+                    <a href="#old-papers"><i class="fas fa-archive"></i>Old Question Papers</a>
+                    <div class="dropdown-content">
+                        <!-- Add all old question paper links here -->
+                    </div>
+                </li>
+            </ul>
         </div>
-    </section>
 
-    <section id="materials" class="quick-links animated">
-        <a href="http://cec.nic.in/" class="link-card">e-Content Portal</a>
-        <a href="https://ndl.iitkgp.ac.in/" class="link-card">Digital Library</a>
-        <!-- Add other study material links -->
-    </section>
+        <!-- Documents Section -->
+        <div class="card" id="documents">
+            <h2><i class="fas fa-file-contract"></i> Documents</h2>
+            <ul class="link-list">
+                <!-- Add all document links here -->
+            </ul>
+        </div>
+    </main>
 
-    <footer id="contact" class="animated">
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
         <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Email: student.sol@unipune.ac.in</p>
-            <address>
-                School of Open Learning (SoL),<br>
-                IDS Building, Near SET Guest House,<br>
-                IUCAA Road, SPPU, Pune-411007
-            </address>
+            <p><strong>Email:</strong> <a href="mailto:student.sol@unipune.ac.in">student.sol@unipune.ac.in</a></p>
+            <p><strong>Address:</strong><br>
+            School of Open Learning (SOL),<br>
+            IDS Building, Near SET Guest House,<br>
+            IUCAA Road, Savitribai Phule Pune University,<br>
+            Pune-411007.</p>
         </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 School of Open Learning. All rights reserved.</p>
     </footer>
 
     <script>
-        // Accordion functionality
-        document.querySelectorAll('.accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const content = header.nextElementSibling;
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
-                header.querySelector('span').textContent = 
-                    content.style.display === 'block' ? '▲' : '▼';
-            });
+        // Mobile menu toggle
+        document.querySelector('.nav-menu').addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                this.classList.toggle('active');
+            }
         });
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Dropdown functionality
+        document.querySelectorAll('.submenu-toggle').forEach(item => {
+            item.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                this.nextElementSibling.classList.toggle('show');
             });
-        });
-
-        // Intersection Observer for animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
         });
     </script>
 </body>
