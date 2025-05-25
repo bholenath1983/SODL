@@ -33,6 +33,7 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
         <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+        <li class="nav-item"><a class="nav-link" href="#syllabus">Syllabus</a></li>
         <li class="nav-item"><a class="nav-link" href="#exam">Exams</a></li>
         <li class="nav-item"><a class="nav-link" href="#docs">Documents</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
@@ -92,12 +93,20 @@
     </ul>
   </div>
 
-  <!-- Syllabus & Materials -->
+  <!-- Syllabus -->
   <div class="container">
-    <h2>Syllabus & Study Material</h2>
-    <p>Access updated syllabus and digital study materials from our portal.</p>
+    <h2>Syllabus</h2>
+    <p>Access updated syllabus from our portal.</p>
     <ul>
       <li><a href="#">Download Syllabus</a></li>
+    </ul>
+  </div>
+ 
+<!-- Materials -->
+  <div class="container">
+    <h2>Study Material</h2>
+    <p>Access updated digital study materials from our portal.</p>
+    <ul>
       <li><a href="#">Study Materials</a></li>
     </ul>
   </div>
