@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School of Open Learning | Savitribai Phule Pune University</title>
-    <link href="https://drive.google.com/file/d/13PG96IYb8wusTXOxAaLXr0sg-aytoVQZ/view?usp=sharing" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -18,7 +18,6 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--dark-text);
-            line-height: 1.6;
         }
         
         .navbar {
@@ -179,54 +178,6 @@
             margin-right: 15px;
         }
         
-        .feature-box {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s;
-        }
-        
-        .feature-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-        
-        .img-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 30px;
-            justify-content: center;
-        }
-        
-        .img-gallery a {
-            flex: 1 1 300px;
-            max-width: 100%;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s;
-        }
-        
-        .img-gallery a:hover {
-            transform: scale(1.03);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .img-gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
         @media (max-width: 768px) {
             .hero-section {
                 padding: 50px 0;
@@ -238,10 +189,6 @@
             
             .hero-section::before {
                 background-size: 150px;
-            }
-            
-            .img-gallery a {
-                flex: 1 1 100%;
             }
         }
     </style>
@@ -284,131 +231,89 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section py-5 bg-light">
-        <div class="container text-center position-relative">
-            <h1 class="display-4 fw-bold mb-3">School of Open Learning (SOL)</h1>
-            <p class="lead mb-4">
-                Empowering learners through flexible, accessible, and affordable education since 2018
-            </p>
-            
-            <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Flexible Learning</h3>
-                        <p>Study at your own pace and schedule with our distance education programs designed for working professionals and students with other commitments.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-rupee-sign"></i>
-                        </div>
-                        <h3>Affordable Education</h3>
-                        <p>Low-cost education with no tuition fees, making quality higher education accessible to students from all economic backgrounds.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h3>Comprehensive Support</h3>
-                        <p>Dedicated study centers, qualified faculty, and extensive learning resources to support your academic journey.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Image Gallery with Hyperlinks -->
-            <div class="img-gallery">
-                <a href="https://unipune.ac.in/SOL/About.html" target="_blank">
-                    <img src="https://unipune.ac.in/uploads/gallery/2024/5/9/1715258644.jpg" alt="SOL Campus">
-                </a>
-                <a href="https://unipune.ac.in/SOL/Study_Centres.html" target="_blank">
-                    <img src="https://unipune.ac.in/uploads/gallery/2024/5/9/1715258644_2.jpg" alt="Study Center">
-                </a>
-                <a href="https://unipune.ac.in/SOL/Examination.html" target="_blank">
-                    <img src="https://unipune.ac.in/uploads/gallery/2024/5/9/1715258644_3.jpg" alt="Examination Hall">
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+<section class="hero-section py-5 bg-light">
+    <div class="container text-center position-relative">
+        <h1 class="display-4 fw-bold mb-3">School of Open Learning (SOL)</h1>
+        <p class="lead mb-4">
+            The School of Open Learning (SOL), affiliated with Savitribai Phule Pune University (SPPU), was established in 2018 to provide inclusive, affordable, and flexible education. As a pioneering institution in School Open and Distance Learning (SODL) in India, SOL is committed to empowering learners from all walks of life.
+        </p>
 
-    <!-- Key Features Section -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <h2 class="section-title">Why Choose School of Open Learning?</h2>
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <i class="fas fa-university me-2"></i> About SOL
-                        </div>
-                        <div class="card-body">
-                            <p>The School of Open Learning (SOL), affiliated with Savitribai Phule Pune University (SPPU), was established in 2018 to provide inclusive, affordable, and flexible education. As a pioneering institution in School Open and Distance Learning (SODL) in India, SOL is committed to empowering learners from all walks of life.</p>
-                            
-                            <h5 class="mt-4 fw-semibold">Our Mission</h5>
-                            <p>To provide quality higher education through open and distance learning to diverse sections of society, especially those who are unable to pursue regular full-time courses.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-header bg-primary text-white">
-                            <i class="fas fa-star me-2"></i> Key Advantages
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i> Recognized by UGC and DEB
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i> Study materials in both English and Marathi
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i> Personal Contact Programs (PCPs) at study centers
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i> Affordable fee structure
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i> Valued degree equivalent to regular programs
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-3">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header bg-primary text-white">
-                            <i class="fas fa-info-circle me-2"></i> Program Highlights
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h5><i class="fas fa-users me-2"></i> Student Support</h5>
-                                    <p>Dedicated study centers across Maharashtra provide academic guidance and mentorship to students throughout their learning journey.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <h5><i class="fas fa-book me-2"></i> Learning Resources</h5>
-                                    <p>Comprehensive self-learning materials, digital resources, and access to online learning platforms to enhance the learning experience.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <h5><i class="fas fa-calendar-alt me-2"></i> Flexible Examination</h5>
-                                    <p>Twice-yearly examination cycles with options for improvement and backlog clearance to accommodate student needs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="text-start mx-auto" style="max-width: 900px;">
+            <h3 class="fw-bold">Key Features of the School of Open Learning (SOL)</h3>
+
+            <h5 class="mt-4 fw-semibold">1. School of Open Learning (SOL) System</h5>
+            <ul>
+                <li>Flexible education where learners and teachers need not be present at the same time or place.</li>
+                <li>Allows for flexible timing, teaching methods, and admission criteria while ensuring quality education.</li>
+                <li>Ideal for those unable to attend traditional full-time college due to personal or professional commitments.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">2. Support for Incomplete Education</h5>
+            <ul>
+                <li>Designed to assist individuals who could not complete their education earlier.</li>
+                <li>Provides a second chance to gain academic qualifications and enhance career opportunities.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">3. Affordable Education</h5>
+            <ul>
+                <li>Low-cost education with no tuition fees.</li>
+                <li>Exam fees and study materials included.</li>
+                <li>Increases access for students from economically weaker sections.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">4. Courses Offered</h5>
+            <ul>
+                <li>Undergraduate and Postgraduate programs in Arts and Commerce.</li>
+                <li>Courses are aligned with academic and professional standards.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">5. Medium of Instruction</h5>
+            <ul>
+                <li>Courses available in both Marathi and English.</li>
+                <li>Enhances inclusivity and regional accessibility.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">6. Study Materials and Centres</h5>
+            <ul>
+                <li>Printed materials distributed to students via study centres.</li>
+                <li>Centres are located within university jurisdiction and equipped with necessary infrastructure.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">7. Role of Study Centres</h5>
+            <ul>
+                <li>Serve as local support and contact points for students.</li>
+                <li>Provide academic guidance, mentorship, and Personal Contact Programs (PCPs).</li>
+                <li>Operate under strict SoL guidelines to maintain consistency and quality.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">8. Qualified Faculty</h5>
+            <ul>
+                <li>All centres are staffed with experienced and qualified instructors.</li>
+                <li>Faculty plays a key role in student mentoring and academic support.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">9. Administrative and Academic Support</h5>
+            <ul>
+                <li>Dedicated teams on the university campus to assist students with queries.</li>
+                <li>Support students throughout academic processes and beyond.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">10. Lifelong Learning and Skill Development</h5>
+            <ul>
+                <li>Encourages continuing education for working professionals and lifelong learners.</li>
+                <li>Supports knowledge upgrading without compromising on jobs or responsibilities.</li>
+            </ul>
+
+            <h5 class="mt-4 fw-semibold">11. Outreach to Disadvantaged Areas</h5>
+            <ul>
+                <li>Focused on providing education to underserved and remote areas.</li>
+                <li>Works to reduce educational disparities and improve access.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+            <div class="d-flex justify-content-center gap-3">
             </div>
         </div>
     </section>
@@ -417,7 +322,7 @@
     <div class="container">
         <!-- Courses Section -->
         <section id="courses" class="mb-5">
-            <h2 class="section-title">Our Academic Programs</h2>
+            <h2 class="section-title">Our Courses</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
@@ -426,12 +331,10 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Bachelor's Degrees</h5>
-                            <p>Our UG programs provide strong foundational knowledge and skills for career advancement or further studies.</p>
                             <div class="mt-3">
                                 <span class="course-badge">BA</span>
                                 <span class="course-badge">BCom</span>
                             </div>
-                            <a href="http://unipune.ac.in/SOL/UG_Programmes.html" class="btn btn-outline-primary mt-3" target="_blank">Program Details</a>
                         </div>
                     </div>
                 </div>
@@ -442,7 +345,6 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Master's Degrees</h5>
-                            <p>Advanced programs designed to provide specialized knowledge and research opportunities.</p>
                             <div class="mt-3">
                                 <span class="course-badge">MBA</span>
                                 <span class="course-badge">MCom</span>
@@ -459,22 +361,7 @@
                                 <span class="course-badge">MA Sanskrit</span>
                                 <span class="course-badge">MA Journalism & Mass Communication</span>
                             </div>
-                            <a href="http://unipune.ac.in/SOL/PG_Programmes.html" class="btn btn-outline-primary mt-3" target="_blank">Program Details</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-4">
-                <div class="col-12">
-                    <div class="alert alert-info">
-                        <h5><i class="fas fa-info-circle me-2"></i> Program Features</h5>
-                        <ul class="mb-0">
-                            <li>All programs follow the Choice Based Credit System (CBCS) as per UGC guidelines</li>
-                            <li>Credit transfer facility available for eligible students</li>
-                            <li>Add-on courses in employability enhancement skills</li>
-                            <li>Option to pursue two academic programs simultaneously as per UGC regulations</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -482,74 +369,71 @@
 
         <!-- Admission Section -->
         <section id="admission" class="mb-5">
-            <h2 class="section-title">Admission Process</h2>
+            <h2 class="section-title">Admission Information</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <i class="fas fa-user-plus me-2"></i> Admission Process
+                            Admission Process
                         </div>
-                        <div class="card-body">
-                            <h5>Eligibility Criteria</h5>
-                            <ul>
-                                <li><strong>UG Programs:</strong> 10+2 or equivalent from recognized board</li>
-                                <li><strong>PG Programs:</strong> Relevant bachelor's degree from recognized university</li>
-                                <li>No upper age limit for any program</li>
-                            </ul>
-                            
-                            <h5 class="mt-4">How to Apply</h5>
-                            <ol>
-                                <li>Visit the official admission portal</li>
-                                <li>Register with basic details</li>
-                                <li>Fill the application form</li>
-                                <li>Upload required documents</li>
-                                <li>Pay application fee online</li>
-                                <li>Submit the form</li>
-                            </ol>
-                            
-                            <div class="alert alert-warning mt-3">
-                                <i class="fas fa-exclamation-triangle me-2"></i> Admission dates and deadlines vary by program. Please check the official schedule.
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <a href="https://sppu.digitaluniversity.ac/admissions" target="_blank">
+                                    <i class="fas fa-user-graduate me-2"></i> Admission Procedure
+                                </a>
                             </div>
-                        </div>
-                        <div class="card-footer bg-transparent">
-                            <a href="https://sppu.digitaluniversity.ac/admissions" class="btn btn-primary" target="_blank">Apply Now</a>
+                            <div class="list-group-item">
+                                <a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" target="_blank">
+                                    <i class="fas fa-calendar-alt me-2"></i> Admission Schedule
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://www.youtube.com/watch?v=RAHj5oNbqIg" target="_blank">
+                                    <i class="fab fa-youtube me-2"></i> Admission Help Tutorial
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://sppuoa.digitaluniversity.ac/esuvidha/instructionFinal/SavitribaiPhulePune.pdf" target="_blank">
+                                    <i class="fas fa-file-pdf me-2"></i> Admission Help Presentation
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://sppuoa.digitaluniversity.ac/ScheduleCollegeList?ppid=39" target="_blank">
+                                    <i class="fas fa-map-marker-alt me-2"></i> Coursewise List of Admission Centers
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <i class="fas fa-info-circle me-2"></i> Admission Resources
+                            Student Corner
                         </div>
                         <div class="list-group list-group-flush">
                             <div class="list-group-item">
-                                <a href="https://sppuoa.digitaluniversity.ac/ScheduleDetails" target="_blank">
-                                    <i class="fas fa-calendar-alt me-2"></i> Admission Schedule 2024-25
+                                <a href="https://sppuapp.digitaluniversity.ac/Login.aspx?IsCollege=%27N%27" target="_blank">
+                                    <i class="fas fa-sign-in-alt me-2"></i> Student Profile Login
                                 </a>
                             </div>
                             <div class="list-group-item">
-                                <a href="https://www.youtube.com/watch?v=RAHj5oNbqIg" target="_blank">
-                                    <i class="fab fa-youtube me-2"></i> Step-by-Step Admission Tutorial
+                                <a href="http://unipune.ac.in/sol/pdf/pdf2024/StudentProfile_13042024.pdf" target="_blank">
+                                    <i class="fas fa-info-circle me-2"></i> How to View Profile
                                 </a>
                             </div>
-                            <div class="list-group-item">
-                                <a href="https://sppuoa.digitaluniversity.ac/esuvidha/instructionFinal/SavitribaiPhulePune.pdf" target="_blank">
-                                    <i class="fas fa-file-pdf me-2"></i> Admission Guidelines (PDF)
+                             <div class="list-group-item">
+                                <a href="https://sppuapp.digitaluniversity.ac/Login.aspx?IsCollege=%27N%27" target="_blank">
+                                    <i class="fas fa-info-circle me-2"></i> Instructions regarding PRN numbers for First Year students admitted in A.Y. 2024-25
                                 </a>
                             </div>
-                            <div class="list-group-item">
-                                <a href="https://sppuoa.digitaluniversity.ac/ScheduleCollegeList?ppid=39" target="_blank">
-                                    <i class="fas fa-map-marker-alt me-2"></i> List of Admission Centers
-                                </a>
+                            <div class="col-md-6">
+                            <div class="card">
+                            <div class="card-header">
+                                Syllabus
                             </div>
                             <div class="list-group-item">
-                                <a href="http://unipune.ac.in/SOL/Fee_Structure.html" target="_blank">
-                                    <i class="fas fa-rupee-sign me-2"></i> Fee Structure
-                                </a>
-                            </div>
-                            <div class="list-group-item">
-                                <a href="http://unipune.ac.in/SOL/Refund_Policy.html" target="_blank">
-                                    <i class="fas fa-exchange-alt me-2"></i> Refund Policy
+                                <a href="http://unipune.ac.in/SOL/Syllabus.html" target="_blank">
+                                    <i class="fas fa-book me-2"></i> Syllabus
                                 </a>
                             </div>
                         </div>
@@ -560,49 +444,61 @@
 
         <!-- Study Materials Section -->
         <section id="study-materials" class="mb-5">
-            <h2 class="section-title">Learning Resources</h2>
+            <h2 class="section-title">Study Resources</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <i class="fas fa-book me-2"></i> Study Materials
+                            Digital Learning Resources
                         </div>
-                        <div class="card-body">
-                            <h5>Self-Learning Materials</h5>
-                            <p>Comprehensive, learner-friendly study materials are provided for all courses, covering the complete syllabus with examples, exercises, and references.</p>
-                            
-                            <h5 class="mt-4">How to Access</h5>
-                            <ul>
-                                <li>Materials are distributed through designated study centers</li>
-                                <li>Digital copies available for download from the student portal</li>
-                                <li>Supplementary materials accessible through our digital library</li>
-                            </ul>
-                            
-                            <a href="http://unipune.ac.in/SOL/Study_Material.html" class="btn btn-outline-primary mt-3" target="_blank">Access Study Materials</a>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <a href="https://storage.googleapis.com/uniquecourses/online.html" target="_blank">
+                                    <i class="fas fa-laptop me-2"></i> SWAYAM On-line Courses
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://cec.nic.in/" target="_blank">
+                                    <i class="fas fa-book-open me-2"></i> e-Content courseware in UG subjects
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://www.swayamprabha.gov.in/" target="_blank">
+                                    <i class="fas fa-tv me-2"></i> SWAYAMPRABHA
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://www.youtube.com/user/cecedusat" target="_blank">
+                                    <i class="fab fa-youtube me-2"></i> CEC-UGC YouTube channel
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <i class="fas fa-laptop me-2"></i> Digital Resources
+                            Digital Libraries
                         </div>
-                        <div class="card-body">
-                            <h5>Online Learning Support</h5>
-                            <p>Enhance your learning experience with our curated digital resources and online courses.</p>
-                            
-                            <div class="list-group list-group-flush mt-3">
-                                <a href="https://storage.googleapis.com/uniquecourses/online.html" target="_blank" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-video me-2"></i> SWAYAM Online Courses
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <a href="https://ndl.iitkgp.ac.in/" target="_blank">
+                                    <i class="fas fa-book-reader me-2"></i> National Digital Library
                                 </a>
-                                <a href="http://cec.nic.in/" target="_blank" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-book-open me-2"></i> e-Content Courseware
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://shodhganga.inflibnet.ac.in/" target="_blank">
+                                    <i class="fas fa-search me-2"></i> Shodhganga
                                 </a>
-                                <a href="https://www.swayamprabha.gov.in/" target="_blank" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-tv me-2"></i> SWAYAMPRABHA Educational Channels
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://ess.inflibnet.ac.in/" target="_blank">
+                                    <i class="fas fa-database me-2"></i> e-Shodh Sindhu
                                 </a>
-                                <a href="https://www.youtube.com/user/cecedusat" target="_blank" class="list-group-item list-group-item-action">
-                                    <i class="fab fa-youtube me-2"></i> CEC-UGC YouTube Lectures
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://vidwan.inflibnet.ac.in/" target="_blank">
+                                    <i class="fas fa-user-tie me-2"></i> Vidwan
                                 </a>
                             </div>
                         </div>
@@ -610,57 +506,8 @@
                 </div>
             </div>
 
-            <!-- Digital Libraries -->
-            <h3 class="mt-5 mb-3 text-center" style="color: var(--primary-color);">Digital Libraries</h3>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-book-reader"></i>
-                        </div>
-                        <div>
-                            <a href="https://ndl.iitkgp.ac.in/" target="_blank">National Digital Library</a>
-                            <p class="small text-muted mt-1 mb-0">Millions of books and resources</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div>
-                            <a href="https://shodhganga.inflibnet.ac.in/" target="_blank">Shodhganga</a>
-                            <p class="small text-muted mt-1 mb-0">Indian theses repository</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div>
-                            <a href="https://ess.inflibnet.ac.in/" target="_blank">e-Shodh Sindhu</a>
-                            <p class="small text-muted mt-1 mb-0">Premium journal access</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div>
-                            <a href="https://vidwan.inflibnet.ac.in/" target="_blank">Vidwan</a>
-                            <p class="small text-muted mt-1 mb-0">Expert database</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Add-on Subjects -->
-            <h3 class="mt-5 mb-3 text-center" style="color: var(--primary-color);">Value-Added Courses</h3>
+            <h3 class="mt-5 mb-3 text-center" style="color: var(--primary-color);">Add-on Subjects Study Materials</h3>
             <div class="row">
                 <div class="col-md-6 col-lg-3">
                     <div class="quick-link-item">
@@ -669,7 +516,6 @@
                         </div>
                         <div>
                             <a href="https://drive.google.com/file/d/1qYz_21iKoCUKvqzOavOYGS5kEnjnEu2W/view?usp=sharing" target="_blank">Indian Constitution</a>
-                            <p class="small text-muted mt-1 mb-0">Understanding our legal framework</p>
                         </div>
                     </div>
                 </div>
@@ -680,7 +526,6 @@
                         </div>
                         <div>
                             <a href="https://drive.google.com/file/d/1_RpptJbJ-7C-04Ti4iNaWPUG0DjBztzn/view?usp=sharing" target="_blank">Human Rights</a>
-                            <p class="small text-muted mt-1 mb-0">Fundamental rights education</p>
                         </div>
                     </div>
                 </div>
@@ -691,7 +536,6 @@
                         </div>
                         <div>
                             <a href="https://drive.google.com/file/d/1sUDR8efYze1yg9KT-pv4m_CEO8_bHGS1/view?usp=sharing" target="_blank">Democracy</a>
-                            <p class="small text-muted mt-1 mb-0">Democratic processes and values</p>
                         </div>
                     </div>
                 </div>
@@ -702,7 +546,6 @@
                         </div>
                         <div>
                             <a href="https://drive.google.com/file/d/1ZzDOP0Qf6xQHZWCaAVfsQE8ISoYHFOIz/view?usp=sharing" target="_blank">Cyber Security</a>
-                            <p class="small text-muted mt-1 mb-0">Digital safety essentials</p>
                         </div>
                     </div>
                 </div>
@@ -711,101 +554,93 @@
 
         <!-- Examination Section -->
         <section id="examination" class="mb-5">
-            <h2 class="section-title">Examination System</h2>
+            <h2 class="section-title">Examination</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
-                            <i class="fas fa-file-alt me-2"></i> Examination Process
-                        </div>
-                        <div class="card-body">
-                            <h5>Key Features</h5>
-                            <ul>
-                                <li>Twice-yearly examination cycles (June and December)</li>
-                                <li>Semester pattern for PG programs, annual pattern for UG programs</li>
-                                <li>Backlog examination facility</li>
-                                <li>Revaluation and photocopy of answer scripts available</li>
-                            </ul>
-                            
-                            <h5 class="mt-4">Important Notes</h5>
-                            <ul>
-                                <li>Minimum 75% attendance in PCPs required for exam eligibility</li>
-                                <li>Exam form submission deadlines strictly enforced</li>
-                                <li>Hall tickets available online 15 days before exams</li>
-                                <li>Results typically declared within 45 days of exams</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="fas fa-link me-2"></i> Examination Links
+                            Question Papers
                         </div>
                         <div class="list-group list-group-flush">
-                            <a href="http://unipune.ac.in/sol/examdecember24.html" target="_blank" class="list-group-item list-group-item-action">
-                                <i class="fas fa-calendar me-2"></i> December 2024 Exam Schedule
-                            </a>
-                            <a href="http://unipune.ac.in/sol/examjune25.html" target="_blank" class="list-group-item list-group-item-action">
-                                <i class="fas fa-calendar me-2"></i> June 2025 Exam Schedule
-                            </a>
-                            <a href="https://sppuapp.digitaluniversity.ac/PreExamv2_ExamformSubmission_PpAmAtWise.aspx" target="_blank" class="list-group-item list-group-item-action">
-                                <i class="fas fa-file-signature me-2"></i> Online Exam Form Submission
-                            </a>
-                            <a href="https://sppuapp.digitaluniversity.ac/PreExamV2_DownloadHallTicket_New.aspx" target="_blank" class="list-group-item list-group-item-action">
-                                <i class="fas fa-ticket-alt me-2"></i> Download Hall Ticket
-                            </a>
-                            <a href="https://sppuapp.digitaluniversity.ac/SearchDuplicateResult.aspx?ID=28176" target="_blank" class="list-group-item list-group-item-action">
-                                <i class="fas fa-poll me-2"></i> Check Results
-                            </a>
-                            <a href="http://unipune.ac.in/SOL/Exam_Revaluation.html" target="_blank" class="list-group-item list-group-item-action">
-                                <i class="fas fa-redo me-2"></i> Revaluation Process
-                            </a>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/SODL%20Question%20Papers%20Formats/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-file-alt me-2"></i> Question Papers Formats
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/November%20%202024/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-calendar me-2"></i> November 2024
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/April2024/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-calendar me-2"></i> April 2024
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/OCTOBER%20%202023/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-calendar me-2"></i> October 2023
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/APRIL%20%202023/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-calendar me-2"></i> April 2023
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/OCT%20%202022/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-calendar me-2"></i> Oct 2022
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/APRIL2022/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-calendar me-2"></i> April 2022
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Question Papers -->
-            <h3 class="mt-5 mb-3 text-center" style="color: var(--primary-color);">Previous Question Papers</h3>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-file-pdf"></i>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Examination Section
                         </div>
-                        <div>
-                            <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/November%20%202024/Forms/AllItems.aspx" target="_blank">November 2024</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div>
-                            <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/April2024/Forms/AllItems.aspx" target="_blank">April 2024</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div>
-                            <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/OCTOBER%20%202023/Forms/AllItems.aspx" target="_blank">October 2023</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="quick-link-item">
-                        <div class="icon-box">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div>
-                            <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/APRIL%20%202023/Forms/AllItems.aspx" target="_blank">April 2023</a>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item">
+                                <a href="http://unipune.ac.in/sol/examdecember24.html" target="_blank">
+                                    <i class="fas fa-file-signature me-2"></i> Examination event (Semester Pattern)
+                                     </a>
+                            </div>
+                             <div class="list-group-item">
+                                <a href="http://unipune.ac.in/sol/examjune25.html" target="_blank">
+                                    <i class="fas fa-file-signature me-2"></i> Examination event (Annual Pattern)
+                                     </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://sppuapp.digitaluniversity.ac/PreExamv2_ExamformSubmission_PpAmAtWise.aspx" target="_blank">
+                                    <i class="fas fa-file-signature me-2"></i> Online Exam Form Submission
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/MARAPR%202025/Forms/AllItems.aspx" target="_blank">
+                                    <i class="fas fa-file-signature me-2"></i> Time Table MAR/APR 2025
+                                     </a>
+                            </div>
+                             <div class="list-group-item">
+                                <a href="http://collegecirculars.unipune.ac.in/sites/examdocs/Time%20Tables%20OCTNOV%202024/Forms/Active%20Result.aspx" target="_blank">
+                                    <i class="fas fa-file-signature me-2"></i> Time Table OCT/NOV 2024
+                                     </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://sppuapp.digitaluniversity.ac/PreExamV2_DownloadHallTicket_New.aspx" target="_blank">
+                                    <i class="fas fa-ticket-alt me-2"></i> Download Hall Ticket
+                                </a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="https://sppuapp.digitaluniversity.ac/SearchDuplicateResult.aspx?ID=28176" target="_blank">
+                                    <i class="fas fa-poll me-2"></i> Check Results
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -814,11 +649,145 @@
 
         <!-- Certificates Section -->
         <section class="mb-5">
-            <h2 class="section-title">Student Certificates</h2>
+            <h3 class="section-title">Certificates</h3>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <i class="fas fa-certificate me-2"></i> Bonafide Certificate
+                    <div class="quick-link-item">
+                        <div class="icon-box">
+                            <i class="fas fa-certificate"></i>
                         </div>
-                        <div class="
+                        <div>
+                            <a href="http://unipune.ac.in/sol/pdf/pdf2024/Bonafide%20Certificate%20Circular_21.082020_13042024.pdf" target="_blank">Bonafide Certificate</a>
+                            <p class="small mb-0 mt-1">
+                                <a href="http://unipune.ac.in/sol/pdf/pdf2024/Application%20of%20Bonafide%20Certificate_21.082020_13042024.pdf" target="_blank">Application Form</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quick-link-item">
+                        <div class="icon-box">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div>
+                            <a href="http://unipune.ac.in/SOL/pdf/pdf2024/TC%20Notice_13042024.pdf" target="_blank">Transfer Certificate</a>
+                            <p class="small mb-0 mt-1">
+                                <a href="http://unipune.ac.in/SOL/pdf/pdf2024/TC%20Form_13042024.pdf" target="_blank">Application Form</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quick-link-item">
+                        <div class="icon-box">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div>
+                            <a href="https://sim.unipune.ac.in/SIM_APP/Account/CreateAccount" target="_blank">Migration Certificate</a>
+                            <p class="small mb-0 mt-1">
+                                <a href="https://sim.unipune.ac.in/SIM_APP/" target="_blank">Application Portal</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="quick-link-item">
+                        <div class="icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <a href="https://sps.unipune.ac.in/app/" target="_blank">Degree Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background-color: var(--light-bg);">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-envelope me-2"></i> Email</h5>
+                            <p class="card-text">
+                                <a href="mailto:student.sol@unipune.ac.in">student.sol@unipune.ac.in</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
+                            <p class="card-text">
+                                School of Open Learning (SOL),<br>
+                                IDS Building, Near SET Guest House, IUCAA Road,<br>
+                                Savitribai Phule Pune University,<br>
+                                Pune-411007.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>School of Open Learning</h5>
+                    <p>Providing quality distance education to students across the region with flexible learning options.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#courses">Courses</a>
+                        <a href="#admission">Admission</a>
+                        <a href="#study-materials">Study Materials</a>
+                        <a href="#examination">Examination</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Important Links</h5>
+                    <div class="footer-links">
+                        <a href="http://unipune.ac.in/" target="_blank">University Website</a>
+                        <a href="http://unipune.ac.in/SOL/Syllabus.html" target="_blank">Syllabus</a>
+                        <a href="https://sppuapp.digitaluniversity.ac/Login.aspx?IsCollege=%27N%27" target="_blank">Student Login</a>
+                        <a href="https://ndl.iitkgp.ac.in/" target="_blank">Digital Library</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 School of Open Learning, Savitribai Phule Pune University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
